@@ -1,47 +1,47 @@
-# Drone
+# Drone Code Test
 
-Implementar um algoritmo para o controle de posição de um drone em um plano cartesiano (X, Y).
+Implement an algorithm for the position control of a drone in a Cartesian plane (X, Y).
 
- 
+ 
 
-O ponto inicial do drone é "(0, 0)" para cada execução do método Evaluate ao ser executado cada teste unitário.
+The starting point of the drone is "(0, 0)" for each run of the Evaluate method when running each unit test.
 
- 
+ 
 
-A string de entrada pode conter os seguintes caracteres N, S, L, e O representando Norte, Sul, Leste e Oeste, respectivamente.
+The input string can contain the following N, S, L, and O characters representing North, South, East, and West, respectively.
 
-Estes caracteres podem estar presentes aleatoriamente na string de entrada. Uma string de entrada "NNNLLL" irá resultar em uma posição final "(3, 3)", assim como uma string "NLNLNL" irá resultar em "(3, 3)".
+These characters may be randomly present in the input string. An input string "NNNLLL" will result in an end position "(3, 3)", just as a string "NLNLNL" will result in "(3, 3)".
 
- 
+ 
 
-Caso o caractere X esteja presente, o mesmo irá cancelar a operação anterior.  Caso houver mais de um caractere X consecutivo, o mesmo cancelará mais de uma ação na quantidade em que o X estiver presente.
+If the character X is present, it will cancel the previous operation. If there is more than one consecutive X character, it will cancel more than one action in the amount X is present.
 
-Uma string de entrada "NNNXLLLXX" irá resultar em uma posição final "(1, 2)" pois a string poderia ser simplificada para "NNL".
+An input string "NNNXLLLXX" will result in an end position "(1, 2)" since the string could be simplified to "NNL".
 
- 
+ 
 
-Além disso, um número pode estar presente após o caractere da operação, representando o "passo" que a operação deve acumular.
+In addition, a number may be present after the character of the operation, representing the "step" that the operation must accumulate.
 
-Este número deve estar compreendido entre 1 e 2147483647.
+This number must be between 1 and 2147483647.
 
-Deve-se observar que a operação 'X' não suporta opção de "passo" e deve ser considerado inválido.
+It should be noted that operation 'X' does not support 'step' option and should be considered invalid.
 
-- Uma string de entrada "NNX2" deve ser considerada inválida.
+- An input string "NNX2" should be considered invalid.
 
--Uma string de entrada "N123LSX" irá resultar em uma posição final "(1, 123)", pois a string pode ser simplificada para "N123L".
+-An input string "N123LSX" will result in an end position "(1, 123)" because the string can be simplified to "N123L".
 
--Uma string de entrada "NLS3X" irá resultar em uma posição final "(1, 1)" pois a string pode ser simplificada para "NL".
+-An input string "NLS3X" will result in an end position "(1, 1)" since the string can be simplified to "NL".
 
- 
+ 
 
-Caso a string de entrada seja inválida ou tenha algum outro problema, o resultado deve ser "(999, 999)".
+If the input string is invalid or has some other problem, the result should be "(999, 999)".
 
- 
+ 
 
-OBSERVAÇÕES:
+COMMENTS:
 
-- Realizar uma implementação com padrões de código para ambiente de "produção". 
+- Perform an implementation with code standards for "production" environment.
 
-- Comentar o código explicando o que for relevante para a solução do problema.
+- Comment the code explaining what is relevant to the solution of the problem.
 
-- Adicionar testes unitários para alcançar uma cobertura de testes relevante.
+- Add unit tests to achieve relevant test coverage.
